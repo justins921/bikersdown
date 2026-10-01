@@ -79,6 +79,7 @@
       email: email,
       phone: fields.phone.value.trim(),
       topic: topic || 'Not specified',
+      call_back: (form.querySelector('input[name="call_back"]:checked') || {}).value || 'Not specified',
       message: message,
       _subject: 'New message from the Bikers Down website' + (topic ? ' — ' + topic : ''),
       _template: 'table',
